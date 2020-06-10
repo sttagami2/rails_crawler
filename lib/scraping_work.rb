@@ -1,4 +1,4 @@
-module ScrapingWork
+class ScrapingWork
 
   def self.sample_function
     p "モジュールが正しく読み込まれています。"
@@ -41,7 +41,7 @@ module ScrapingWork
   end
 
   def self.detail(doc)
-    "detail"
+    doc.at('//section[contains(@class, "detail_information")]/table[@class="job_offer_detail_table"]').text.strip
   end
 
   def self.expired_at(doc)
