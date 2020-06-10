@@ -1,0 +1,6 @@
+ja:
+  enums:
+    work:
+      site_type:
+        crowdworks: クラウドワークス
+        lancers: ランサーズ
